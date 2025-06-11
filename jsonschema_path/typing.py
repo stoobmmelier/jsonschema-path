@@ -1,8 +1,17 @@
 from typing import Any
-from typing import Hashable
 from typing import Mapping
 
-Lookup = Mapping[Hashable, Any]
+from pathable.types import LookupKey as SchemaKey
+from pathable.types import LookupNode as SchemaNode
+from pathable.types import LookupValue as SchemaValue
+
+__all__ = [
+    "ResolverHandlers",
+    "Schema",
+    "SchemaNode",
+    "SchemaKey",
+    "SchemaValue",
+]
 
 ResolverHandlers = Mapping[str, Any]
-Schema = Mapping[Hashable, Any]
+Schema = Mapping[str, Any]
